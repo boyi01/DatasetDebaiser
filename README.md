@@ -14,12 +14,12 @@ python train_bert.py --seed 42 --result_path result --balance y --balance_faktor
 
 ### For custom use, for more information check the pdf
 - import dataset_cleaner.py
-- use the function balance_dataset(
-  dataset #A huggingface dataset
-  ,args.metadata_path #Use on of the provided json (job_simple.json or job_simple_s.json) or build your own
-  ,args.context #Pick a context: "s","2s","p"
-  ,args.fix_mode #Pick a fix mode: "a","d"
-  ,balance=balance_faktor # Pick a balance factor for example "1:1"
-  ,name=args.name #TRUE or FALSE, if names should be considered
-  ,check_depend_parm=args.check_depend_parm #TRUE or FALSE, if word dependency should be considered
-  )
+- use the function balance_dataset(  
+  dataset #A huggingface dataset  
+  ,args.metadata_path #Use on of the provided json (job_simple.json or job_simple_s.json) or build your own  
+  ,args.context #Pick a context: "s","2s","p"  
+  ,args.fix_mode #Pick a fix mode: "a","d"  
+  ,balance=balance_faktor # Pick a balance factor for example "1:1"  
+  ,name=args.name #TRUE or FALSE, if names should be considered  
+  ,check_depend_parm=args.check_depend_parm #TRUE or FALSE, if word dependency should be considered  
+  )  
