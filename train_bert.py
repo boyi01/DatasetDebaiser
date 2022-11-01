@@ -9,7 +9,7 @@ import json
 from transformers import BertTokenizerFast
 import torch
 
-from utils.dataset_sentence import balance_dataset_sentence
+from dataset_sentence import balance_dataset_sentence
 
 import sys
 import argparse
