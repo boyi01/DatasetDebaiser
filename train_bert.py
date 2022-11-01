@@ -9,7 +9,7 @@ import json
 from transformers import BertTokenizerFast
 import torch
 
-from dataset_sentence import balance_dataset_sentence
+from dataset_cleaner import balance_dataset
 
 import sys
 import argparse
@@ -48,7 +48,7 @@ def main():
     balance_faktor=[ int(x) for x in args.balance_faktor.split(",") ]
 
     if args.balance == 'y':
-        dataset = balance_dataset_sentence(dataset,args.metadata_path,args.context,args.fix_mode,balance=balance_faktor,name=args.name,check_depend_parm=args.check_depend_parm)
+        dataset = balance_dataset(dataset,args.metadata_path,args.context,args.fix_mode,balance=balance_faktor,name=args.name,check_depend_parm=args.check_depend_parm)
 
 
 
